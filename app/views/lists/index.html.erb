@@ -1,0 +1,8 @@
+<ul>
+  <% @list.each do |list| %>
+    <li><%= link_to list.name, list_path(list) %></li>
+  <% end %>
+
+</ul>
+
+<%= link_to "New List", new_list_path %>
